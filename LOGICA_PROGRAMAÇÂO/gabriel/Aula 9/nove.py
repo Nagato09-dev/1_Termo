@@ -150,7 +150,6 @@ print("Bem-Vindo ao GitHub")
 #     print("Não foi possível conectar após 3 tentativas.")
 # elif opcao == "n":
 #     print("Conexão cancelada pelo usuário.")
-
 # 10.1
 # O programa deve pedir a senha até que o usuário digite "python123"
 # senha = ""
