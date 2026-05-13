@@ -97,9 +97,9 @@ print("Bem-Vindo ao GitHub")
 # 7.2
 # O sistema deve dar "Excelente" para notas 9 ou 10.
 # nota = 9.5
-# if nota >= 9:
+# if nota >= 7:
 #     print("Aprovado")
-# elif nota >= 7:
+# elif nota >= 9:
 #     print("Excelente!")
 # 7.3
 # O sistema deve dar "Excelente" para notas 9 ou 10.
@@ -141,6 +141,16 @@ print("Bem-Vindo ao GitHub")
 #     print("Tentando conectar...")
 #     tentativas += 1
 # print("Não foi possível conectar após 3 tentativas.")
+# opcao = input("Deseja tentar novamente? (s/n): ")
+# if opcao == "s":
+#     tentativas = 1
+#     while tentativas <= 3:
+#         print("Tentando conectar...")
+#         tentativas += 1
+#     print("Não foi possível conectar após 3 tentativas.")
+# elif opcao == "n":
+#     print("Conexão cancelada pelo usuário.")
+
 # 10.1
 # O programa deve pedir a senha até que o usuário digite "python123"
 # senha = ""
