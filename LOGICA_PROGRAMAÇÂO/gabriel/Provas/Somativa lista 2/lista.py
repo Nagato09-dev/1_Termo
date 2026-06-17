@@ -609,5 +609,46 @@
 # import tkinter as tk
 # from tkinter import messagebox
 
-# #janela
-# janela = tk.Tk
+# # janela
+# janela = tk.Tk()
+# janela.title("Relatório de Turno")
+# janela.geometry("700x400")
+# janela.configure(bg="#1e2938")
+
+# # variáveis
+# peca_atual = 1
+# aprovadas = 0
+# total_pecas = 5
+
+# # função
+# def verificar():
+#     global peca_atual, aprovadas
+#     diametro = float(ent_diametro.get())
+#     if 19.9 <= diametro <= 20.1:
+#         aprovadas += 1
+
+#     peca_atual += 1
+#     ent_diametro.delete(0, tk.END)
+
+#     if peca_atual <= total_pecas:
+#         lbl_instrucao.config(text=f"Digite o diâmetro da peça {peca_atual}:")
+#     else:
+#         eficiencia = (aprovadas / total_pecas) * 100
+#         messagebox.showinfo("Relatório Final",f"Peças aprovadas: {aprovadas} e a eficiência do lote: {eficiencia:.2f}%")
+
+# # componentes
+# lbl_titulo = tk.Label(janela,text="Relatório de Turno Completo",font=("Arial", 16),bg="#1e2938",fg="#ffffff")
+# lbl_instrucao = tk.Label(janela,text="Digite o diâmetro da peça 1:",font=("Arial", 14),bg="#1e2938",fg="#ffffff")
+# ent_diametro = tk.Entry(janela)
+# btn_enviar = tk.Button(janela,text="Enviar",command=verificar)
+# btn_fechar = tk.Button(janela,text="Fechar",command=janela.destroy,bg="#ff0000",fg="#ffffff")
+
+# # posicionamento
+# lbl_titulo.grid(row=0, column=0, padx=10, pady=10)
+# lbl_instrucao.grid(row=1, column=0, padx=10, pady=10)
+# ent_diametro.grid(row=2, column=0, padx=10, pady=10)
+# btn_enviar.grid(row=3, column=0, padx=10, pady=10)
+# btn_fechar.grid(row=4, column=0, padx=10, pady=10)
+
+# # loop da janela
+# janela.mainloop()
